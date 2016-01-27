@@ -6,7 +6,7 @@ VAGRANTFILE_API_VERSION = '2'
 @script = <<SCRIPT
 DOCUMENT_ROOT_ZEND="/var/www/zf/public"
 apt-get update
-apt-get install -y apache2 git curl php5-cli php5 php5-intl libapache2-mod-php5
+apt-get install -y apache2 git curl php5-cli php5 php5-intl libapache2-mod-php5 mysql-server php5-mysql
 mysql -root < /wamp/www/skeleton-application/data/init_bd.sql
 echo "
 <VirtualHost *:80>
